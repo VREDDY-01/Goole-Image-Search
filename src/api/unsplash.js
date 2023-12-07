@@ -4,6 +4,6 @@ import env from "react-dotenv";
 export default axios.create({
     baseURL:"https://api.unsplash.com/",
     headers:{
-        Authorization: env.ACCESS_KEY
+        Authorization: process.env.REACT_APP_ACCESS_KEY
     }
 })
